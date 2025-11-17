@@ -2,14 +2,14 @@
   "manifest_version": 3,
   "name": "Kyu nahi ho rahi padhai?",
   "version": "1.0",
-  "description": "Smart auto-scroll with direction control and custom YouTube thumbnails.",
-  "permissions": ["storage"],
+  "description": "Replace YouTube thumbnails with custom images.",
+  "permissions": ["storage", "tabs"],
   "icons": {
     "128": "images/icon.png"
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Auto-Scroll Settings",
+    "default_title": "Thumbnail Replacer",
     "default_icon": "images/icon.png"
   },
   "content_scripts": [
