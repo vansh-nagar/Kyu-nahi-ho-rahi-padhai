@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyu nahi ho rahi padhai?</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="images/icon.png" alt="Extension Icon" class="header-icon" />
+        <div class="header-text">
+          <h1>Kyu nahi ho rahi?</h1>
+          <p>Auto-Scroll Control Panel</p>
+        </div>
+      </div>
+
+      <div class="status-indicator">
+        <div class="status-dot" id="statusDot"></div>
+        <span id="statusText">Auto-Scroll: OFF</span>
+      </div>
+
+      <div class="settings-group">
+        <!-- Enable/Disable Toggle -->
+        <div class="setting-item">
+          <div class="setting-header">
+            <span class="setting-label">⚡ Enable Auto-Scroll</span>
+            <label class="toggle-switch">
+              <input type="checkbox" id="enableToggle" />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <p class="setting-desc">Turn auto-scrolling on or off</p>
+        </div>
+
+        <!-- Smooth vs Instant -->
+        <div class="setting-item">
+          <div class="setting-header">
+            <span class="setting-label">🎯 Smooth Animation</span>
+            <label class="toggle-switch">
+              <input type="checkbox" id="smoothToggle" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <p class="setting-desc">
+            <span id="smoothText">Smooth scrolling enabled</span>
+          </p>
+        </div>
+
+        <!-- Direction Control -->
+        <div class="setting-item">
+          <div class="setting-header">
+            <span class="setting-label">📍 Scroll Direction</span>
+            <div class="direction-buttons">
+              <button id="dirDown" class="dir-btn active" title="Scroll Down">
+                ↓ Down
+              </button>
+              <button id="dirUp" class="dir-btn" title="Scroll Up">↑ Up</button>
+            </div>
+          </div>
+          <p class="setting-desc">Choose scroll direction (next or previous)</p>
+        </div>
+
+        <!-- Speed Control -->
+        <div class="setting-item">
+          <div class="setting-header">
+            <span class="setting-label">⚙️ Scroll Speed</span>
+            <div class="speed-control">
+              <input type="range" id="speedSlider" min="1" max="10" value="2" />
+              <span id="speedValue">2x</span>
+            </div>
+          </div>
+          <p class="setting-desc">Adjust scrolling speed</p>
+        </div>
+      </div>
+
+      <div class="quick-actions">
+        <button id="quickToggleBtn" class="quick-action-btn">
+          <span class="quick-icon">🚀</span>
+          <span class="quick-text">Quick Start</span>
+        </button>
+      </div>
+
+      <div class="footer">
+        <p>✅ All settings saved to Chrome sync</p>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

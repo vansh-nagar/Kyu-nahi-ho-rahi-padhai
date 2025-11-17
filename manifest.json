@@ -1,8 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Thumbnail Replacer",
+  "name": "Kyu nahi ho rahi padhai?",
   "version": "1.0",
-  "description": "Replaces YouTube thumbnails with custom images.",
+  "description": "Smart auto-scroll with direction control and custom YouTube thumbnails.",
+  "permissions": ["storage"],
+  "icons": {
+    "128": "images/icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Auto-Scroll Settings",
+    "default_icon": "images/icon.png"
+  },
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
