@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Thumbnail Replacer",
+  "version": "1.0",
+  "description": "Replaces YouTube thumbnails with custom images.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ]
+}
